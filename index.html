@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>低碳生活,低碳出行</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	
+</head>
+<body id="body">
+	<div class="container-fluid">
+		<!-- 头部图片及头像、退出系统LOGO -->
+		<div class="row header">
+			<div id="ltTime"></div>
+			<div class="headerTitle">青锋队(环保数据分析平台)</div>
+			<div class="fill"></div>
+			<a href="#" id="user"><img src="./img/user.png" alt=""><span></span></a>
+			<a href="#" id="switch"><img src="./img/switch.png" alt=""><span></span></a>
+		</div>
+		
+		<!-- 详细内容 -->
+		<div class="row contents">
+			<!-- 左边区域 -->
+			<div class="col-sm-4 col-md-4 col-md-4" id="mainLeft">
+                <div class="row">
+                    <!-- 左1区域 -->
+                    <div id="ltContents1">
+                        <div id="ltTitle" class="contentsTitle">统计信息</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="l1">
+							<div id="l1l">
+								<p class="l1Top"><span>14</span>&nbsp;&nbsp;亿立方千米&nbsp;&nbsp;&nbsp;&nbsp;水资源总量</p>
+								<hr style="margin: 5px 15%;border:0;height: 1px;background-color: #2E4577;" />
+								<p>淡水资源总量</p>
+								<p class="l1Bottom">0.35亿立方千米</p>
+							</div>
+						</div>
+					</div>
+					<!-- 左2区域 -->
+					<div id="ltContents2">
+						<div id="ltTitle" class="contentsTitle">出行方式数据分析</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="l2Charts">
+							<div id="l2lChart"></div>
+							<div id="l2rChart"></div>
+						</div>
+					</div>
+                    <!-- 左3区域 -->
+                    <div id="ltContents3">
+                        <div class="lcTitle contentsTitle">森林覆盖率(%)</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="l3Input">
+							<input type="checkbox" name="checkboxchart" class="checkboxchart" value="技术能力指标"/>
+							<input type="checkbox" name="checkboxchart" class="checkboxchart" value="创新驱动能力"/>
+							<input type="checkbox" name="checkboxchart" class="checkboxchart" value="知识产权能力"/>
+						</div>
+						
+						<div id="l3Charts">
+							<div id="ltChart"></div>
+						</div>
+                    </div>
+                    <!-- 左4区域 -->
+                    <div id="ltContents4">
+                        <div class="lbTitle contentsTitle"></div>
+                        <hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+                        <div id="l4Charts">
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+
+			<!-- 中间区域 -->
+			<div class="col-sm-4 col-md-4 col-md-4" id="mainCenter">
+				<div class="row">
+					<!-- nav栏 -->
+					<div id="centerNav">
+						<a href="#">趋势分析</a>
+						<a href="#">指标分析</a>
+						<a href="#">监测分析</a>
+						<a href="#">预测分析</a>
+						<a href="#">知识图谱</a>
+						<a href="#">电子档案</a>
+					</div>
+					<div style="padding: 0 7%;">
+						<hr style="margin-bottom: 10px;margin-top: 5px;border:0;height: 1px;background-color: #2E4577;" />
+					</div>
+                    <!-- 搜索栏 -->
+                    <div id="search">
+                        <span>智能云搜</span>
+                        <input class="input" type="text" />
+                        <img src="./img/serarch.png">
+                    </div>
+                    <!-- 地图 -->
+					<div id="centerTop">
+						<div class="mapBox">
+							<div id="ctMap"></div>
+						</div>
+                    </div>
+                    <!-- 中下图表 -->
+					<div id="centerBottom">
+                        <div class="lbTitle contentsTitle"></div>
+                        <hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="cbChart"></div>
+					</div>
+				</div>
+			</div>
+
+			
+			<!-- 右边区域 -->
+			<div class="col-sm-4 col-md-4 col-md-4" id="mainRight">
+				<div class="row">
+					<div id="rContents1">
+						<div class="rtTitle contentsTitle">数据分析</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="r1">
+							<div id="r1l">
+								<div class="r1Top">
+									<p>森林面积</p>
+									<p>22.19<span>%</span></p>
+								</div>
+								<div class="r1Bottom">
+									<p>20世纪70年代&nbsp;&nbsp;12.7%</p>
+									<p>本年</p>
+									<p>22.19%</p>
+								</div>
+							</div>
+							<div id="r1c">
+								<div class="r1Top">
+									<p>淡水水贮存量</p>
+									<p>0.35<span>亿立方千米</span></p>
+								</div>
+								<div class="r1Bottom">
+									<p>总水量&nbsp;&nbsp;14亿立方千米</p>
+									<p>淡水总量</p>
+									<p>14亿立方千米</p>
+								</div>
+							</div>
+							<div id="r1r">
+								<div class="r1Top">
+									<p class="r1More">粮食产量</p>
+									<p>1.3<span>万亿千斤</span></p>
+								</div>
+								<div class="r1Bottom">
+									<p>上年&nbsp;&nbsp;下降11.3%</p>
+									<p>本年</p>
+									<p>1.3万亿千斤</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="rightTop">
+						<div class="rtTitle contentsTitle">弹幕</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<div id="tagcloud">
+							<a href="#">水资源减少</a>
+							<a href="#">树木被砍伐</a>
+							<a href="#">森林火灾</a>
+							<a href="#">全球变暖</a>
+							<a href="#">鱼类减少</a>
+							<a href="#">鸟类减少</a>
+							<a href="#">白色垃圾</a>
+							<a href="#">酸雨</a>
+							<a href="#">臭氧超标</a>
+							<a href="#">大气污染</a>
+							<a href="#">小鸟没了家园</a>
+							<a href="#">鱼儿没有了池塘</a>
+							<a href="#">你忍心破坏环境吗?</a>
+							<a href="#">温室效应</a>
+							<a href="#">青藏高原上的垃圾</a>
+							<a href="#">海洋垃圾</a>
+							<a href="#">你做到了保护环境的职责吗?</a>
+							<a href="#">我们不是旁观者</a>
+							<a href="#">今天你环保了吗?</a>
+							<a href="#">食堂你用一次性筷子了吗?</a>
+							<a href="#">农林学子,环保我们一起行动.</a>
+							<a href="#">你看到它们眼神中中透露出的无奈吗?</a>
+							<a href="#">你觉得保护环境应该是怎么样子的?</a>
+							<a href="#">低碳生活,绿色环保</a>
+						</div>
+					</div>
+					<div id="rightCenter">
+						<div class="rcTitle contentsTitle">近期要闻</div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						<!-- 右3内容 -->
+						<div id="imformation">
+							<!-- 新闻头部 -->
+							<div class="imformHeader">
+								<p class="tab-button cur" data-tab="one">环保动态</p>
+								<p class="tab-button" data-tab="two">环保发展</p>
+								<p class="tab-button" data-tab="three">环保状况</p>
+								<p class="tab-button" data-tab="four">动员大会</p>
+							</div>
+							<!-- 新闻内容 -->
+							<div class="imformContents">
+								<!-- 行业动态 -->
+								<div class="tab-item active" id="tab-one">
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">水的净化</span>
+												</div>
+											</a>
+										</div>
+					
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">污水处理流程</span>
+												</div>
+											</a>
+										</div>
+					
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">植树治沙</span>
+												</div>
+											</a>
+										</div>
+					
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">污水处理工艺流程</span>
+												</div>
+											</a>
+										</div>
+					
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">臭氧修复</span>
+												</div>
+											</a>
+										</div>
+										<div class="article-list">
+											<a href="#" class="article-link">
+												<div class="article-content">
+													<span class="article-comp">环保动态</span>
+													<span class="article-title">大气污染防治工程</span>
+												</div>
+											</a>
+										</div>
+								</div>
+								<!-- 公司发展 -->
+								<div class="tab-item" id="tab-two">
+									<h1>this is tab-two</h1>
+								</div>
+								<!-- 经营状况 -->
+								<div class="tab-item" id="tab-three">
+									<h1>this is tab-three</h1>
+								</div>
+								<!-- 经营风险 -->
+								<div class="tab-item" id="tab-four">
+									<h1>this is tab-four</h1>
+								</div>
+							</div>
+						</div>
+						<div class="rCcont">
+							
+						</div>
+					</div>
+					<div id="rightBottom">
+						<div class="rbTitle contentsTitle"></div>
+						<hr style="margin-bottom: 5px;margin-top: 0px;border:0;height: 1px;background-color: #2E4577;" />
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row footer">
+			<img src="" alt="">
+			环保社(青锋队)&nbsp;&nbsp;&nbsp;&nbsp;版权所有
+		</div>
+	</div>
+</body>
+
+<script src="./js/echarts.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./map/js/nanchang.js"></script>
+<script src="./js/allCharts.js"></script>
+<script src="./js/tagcloud.js"></script>
+
+<script type="text/javascript">
+	
+	//获取当前时间
+	function time() {
+		var today = new Date();
+		var y = today.getFullYear(); //年
+		var m = (today.getMonth() + 1); //月
+		var d = today.getDate(); //日
+		var h = today.getHours(); //时
+		var min = today.getMinutes(); //分
+		var sec = today.getSeconds(); //秒
+		var weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+		var week = weeks[today.getDay()];
+		document.getElementById("ltTime").innerHTML = y + "-" + m + '-' + d + " " + h + ':' + min + ' ' + week;
+	}
+	setInterval(time(), 1000);
+
+	// 设置标签云颜色
+	var tagsListLen = $("#tagcloud").children().length;
+	var colorList = ['red','yellow','blue','green','gray','coral','aqua','white'];
+	for( i=0; i <= tagsListLen;i++){
+		$("#tagcloud").children().eq(i).css({color:colorList[i%8]});
+	}
+
+	//tab切换		
+	$('.tab-button').click(function() {
+		var tab = $(this).data('tab')
+		$(this).addClass('cur').siblings('.tab-button').removeClass('cur');
+		$('#tab-' + tab + '').addClass('active').siblings('.tab-item').removeClass('active');
+	});
+
+	// 新闻内容滚动
+	window.flag = true;
+	$(function() {
+		var listPanel = $('.tab-item.active');
+		var nubcers = 0; //向上滚动top值
+
+		function up() { //向上滚动
+			listPanel.animate({
+				'top': (nubcers - 30) + 'px'
+			}, 1000, 'linear', function() {
+				listPanel.css({'top': '0px'}).find('.article-list:first').appendTo(listPanel);
+				if(flag == true) {
+					up();
+				}
+			});
+		};
+		up();
+        listPanel.hover(function() {
+			window.flag = false;
+        }, function(){
+			window.flag = true;
+			up();
+		});
+	});
+</script>
+</html>
